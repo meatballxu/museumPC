@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+	<html lang="zh-CN">
+	  <head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>谢子龙影像艺术馆</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/common.css">
+	</head>
+	<body>
+		<div class="main-menu fir">
+			<div class="first ma10">
+				<div class="logo"><img src="img/logo-nav.png" /></div>
+				<div class="item">
+					<a href="#">参观</a>
+					<a href="#">展览</a>
+					<a href="#">学术</a>
+					<a href="#">公共项目</a>
+					<a href="#">艺术商店</a>
+					<a href="#">会员</a>
+					<a href="#">X-Space</a>
+					<a href="#">资讯</a>
+					<a href="#">关于XPM</a>
+					<a class="search-btn" href="#"><img src="img/search-nav.png" /></a>
+				</div>
+			</div>
+			<div class="second">
+				<a class="gohome" href="index2.html"><i class="iconfont icon-fanhui mr10"></i>HOME</a>
+			</div>
+			<div class="user">
+				<div class="unlog"><a href="#">注册</a>&frasl;<a href="#">登录</a></div>
+				<div class="log hide"><a href="#"><img src="img/ep/head.jpg" /></a></div>
+				<div class="show-fir"><a href="javascript:"><i class="icon iconfont icon-gengduocaidan"></i></a></div>
+			</div>
+			<div class="searchBox" style="display: none;">
+				<div class="search">
+					<input class="keywords" type="text" placeholder="您想搜索什么？" />
+					<a class="btn" href="#">搜 索</a>
+				</div>
+			</div>
+		</div>
+		<div>--------------------------------------------------------------------</div>
+		<div class="main-menu fir">
+			<div class="first">
+				<div class="logo"><img src="img/logo-nav.png" /></div>
+				<div class="item">
+					<a href="#">参观</a>
+					<a href="#">展览</a>
+					<a href="#">学术</a>
+					<a href="#">公共项目</a>
+					<a href="#">艺术商店</a>
+					<a href="#">会员</a>
+					<a href="#">X-Space</a>
+					<a href="#">资讯</a>
+					<a href="#">关于XPM</a>
+					<a class="search-btn" href="#"><img src="img/search-nav.png" /></a>
+				</div>
+			</div>
+			<div class="second">
+				<a class="gohome" href="index2.html"><i class="iconfont icon-fanhui mr10"></i>HOME</a>
+			</div>
+			<div class="user">
+				<div class="unlog hide"><a href="#">注册</a>&frasl;<a href="#">登录</a></div>
+				<div class="log"><a href="#"><img src="img/ep/head.jpg" /></a></div>
+				<div class="show-fir"><a href="javascript:"><i class="icon iconfont icon-gengduocaidan"></i></a></div>
+			</div>
+			<div class="searchBox" style="display: none;">
+				<div class="search">
+					<input class="keywords" type="text" placeholder="您想搜索什么？" />
+					<a class="btn" href="#">搜 索</a>
+				</div>
+			</div>
+		</div>
+		<div>--------------------------------------------------------------------</div>
+		<div style="background-color: #414141;">
+			<div class="main-menu sec">
+				<div class="first ma10">
+					<div class="logo"><img src="img/logo-nav.png" /></div>
+					<div class="item">
+						<a href="#">参观</a>
+						<a href="#">展览</a>
+						<a href="#">学术</a>
+						<a href="#">公共项目</a>
+						<a href="#">艺术商店</a>
+						<a href="#">会员</a>
+						<a href="#">X-Space</a>
+						<a href="#">资讯</a>
+						<a href="#">关于XPM</a>
+						<a class="search-btn" href="#"><img src="img/search-nav.png" /></a>
+					</div>
+				</div>
+				<div class="second">
+					<a class="gohome" href="index2.html"><i class="iconfont icon-fanhui mr10"></i>HOME</a>
+				</div>
+				<div class="user">
+					<div class="unlog hide"><a href="#">注册</a>&frasl;<a href="#">登录</a></div>
+					<div class="log"><a href="#"><img src="img/ep/head.jpg" /></a></div>
+					<div class="show-fir"><a href="javascript:"><i class="icon iconfont icon-gengduocaidan"></i></a></div>
+				</div>
+				<div class="searchBox" style="display: none;">
+					<div class="search">
+						<input class="keywords" type="text" placeholder="您想搜索什么？" />
+						<a class="btn" href="#">搜 索</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<script type='text/javascript' src='js/jquery-3.3.1.min.js' charset='utf-8'></script>
+		<script>
+			
+			$(".search-btn").click(function() {
+				var sb = $(this).closest(".main-menu").find(".searchBox");
+				if(sb.is(':visible')) {
+					sb.slideUp();
+					sb.find(".keywords").val("");
+				}else {
+					sb.slideDown();
+					sb.find(".keywords").focus();
+				}
+			});
+			
+			$(".show-fir").click(function() {
+				$(this).closest(".main-menu").removeClass("sec").addClass("fir")
+			});
+		</script>
+	</body>
+</html>

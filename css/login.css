@@ -1,0 +1,182 @@
+html,body {
+	height: 100%;
+	overflow: hidden;
+}
+body {
+	background-color: #B4B4B4;
+	background: url(../img/login/login-bg.jpg) left top no-repeat;
+	position: relative;
+	background-size: 100% 100%;
+}
+.login-bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #B4B4B4;
+	background-image: url(../img/login/login-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: auto 100%; 
+}
+.loginContainer {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	top: 0;
+}
+.loginBox {
+	width: 520px;
+	background-color: #FFFFFF;
+	margin: 180px 0 180px 16%;
+	padding: 45px 62px 70px 62px;
+}
+.loginBox .top {
+	margin-top: 60px;
+	font-size: 24px;
+	color: #999999;
+}
+.loginBox.regBox .top {
+	margin-top: 40px;
+}
+.loginBox .top font {
+	color: #1A1A1A;
+}
+.loginForm {
+	margin-top: 40px;
+	width: 360px;
+	box-shadow: 1px 5px 15px rgba(0,0,0,0.08);
+}
+.loginForm li {
+	height: 60px;
+	border: 2px solid #F0F0F0;
+	padding-left: 18px;
+}
+.loginForm li.on,
+.registerForm li.on {
+	border-left-color: #E4022C;
+	border-left-width: 2px;
+	border-radius: 0 4px 4px 0;
+}
+.loginForm li:first-child {
+	border-bottom: none;
+}
+.loginForm label {
+	font-size: 13px;
+	color: #CDCDCD;
+}
+.loginForm input.tel,
+.loginForm input.pwd {
+	display: block;
+	border: none;
+	color: #1A1A1A;
+	font-size: 14px;
+    width: 320px;
+    line-height: 25px ;
+}
+label {
+	margin-top: 8px;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+input::-webkit-input-placeholder{
+    color:#CDCDCD
+}
+input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color:#CDCDCD;
+}
+input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color:#CDCDCD;
+}
+input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+    color:#CDCDCD;
+}
+.ckline {
+	height: 30px;
+	margin: 20px 0;
+	font-size: 13px;
+}
+.rmbpwd {
+	float: left;
+}
+.fgtpwd {
+	margin: 8px 40px 0 0;
+	float: right;
+}
+.rmbpwd label {
+	font-weight: normal;
+	color: #999999;
+}
+.btn-black,
+.btn-white {
+	font-size: 13px;
+    padding: 7px 10px;
+    min-width: 110px;
+}
+/* 注册 */
+.registerForm {
+	margin: 25px 0;
+}
+.registerForm li {
+	background: #FFFFFF;
+	border: 1px solid #F0F0F0;
+	border-radius: 4px;
+	height: 54px;
+	margin-bottom: 20px;
+	padding: 0 0 0 20px;
+	position: relative;
+}
+.registerForm label {
+	color: #000000;
+	font-size: 16px;
+	line-height: 36px;
+	font-weight: normal;
+	position: absolute;
+	left: 20px;
+}
+.registerForm li.on label {
+	left: 19px;
+}
+.registerForm input {
+	border: none;
+	width: 100%;
+	float: right;
+	padding-right: 20px;
+	line-height: 34px;
+	text-align: right;
+	margin-top: 10px;
+	font-size: 16px;
+}
+.orcode {
+	border: 6px solid #E4022C;
+}
+/* 注册 end */
+
+/* 找回密码 */
+.resetBox input.code {
+	padding-right: 100px;
+}
+.resetBox .sendCode {
+	position: absolute;
+	right: 18px;
+	top: 14px;
+	font-size: 12px;
+    padding: 3px 0;
+    min-width: 70px;
+}
+.sendCode.disable {
+	border-color: #FFFFFF;
+	color: #4A90E2;
+	text-align: right;
+	font-size: 14px;
+	cursor:default;
+}
+.sendCode.disable:active,
+.sendCode.disable:focus {
+	box-shadow:none;
+}
+/* 找回密码 end */

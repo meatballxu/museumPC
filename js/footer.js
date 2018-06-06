@@ -1,0 +1,31 @@
+//将导航HTML写入页面，请将链接补全
+
+document.writeln("<footer>");
+document.writeln("	<div class=\'main-container\'>");
+document.writeln("		<dl>");
+document.writeln("			<dt><a href=\'#\'>关于XPM</a></dt>");
+document.writeln("			<dt><a href=\'#\'>视频宣传</a></dt>");
+document.writeln("			<dt><a href=\'#\'>联系我们</a></dt>");
+document.writeln("			<dt><a href=\'#\'>微博</a></dt>");
+document.writeln("		</dl>");
+document.writeln("		<dl>");
+document.writeln("			<dt><a href=\'#\'>XPM地址</a></dt>");
+document.writeln("			<dd class=\'tGrey\'>湖南省长沙岳麓区洋湖街道潇湘南路一段387号</dd>");
+document.writeln("		</dl>");
+document.writeln("		<dl>");
+document.writeln("			<dt><a href=\'#\'>XPM邮箱</a></dt>");
+document.writeln("			<dd class=\'tGrey\'>xzlmuseum@163.com</dd>");
+document.writeln("		</dl>");
+document.writeln("		<dl>");
+document.writeln("			<dt><a href=\'#\'>联系电话</a></dt>");
+document.writeln("			<dd class=\'tGrey\'>0731- 88991518</dd>");
+document.writeln("		</dl>");
+document.writeln("		<div class=\'logo\'>");
+document.writeln("			<img src=\'../img/footer.jpg\' />");
+document.writeln("		</div>");
+document.writeln("		<div class=\'orcode\'>");
+document.writeln("			<div><img src=\'../img/login/orcode.jpg\' /></div>");
+document.writeln("			<h4>XPM公众号</h4>");
+document.writeln("		</div>");
+document.writeln("	</div>");
+document.writeln("</footer>");

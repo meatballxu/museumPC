@@ -1,0 +1,52 @@
+.searchResult h1 {
+	font-size: 20px;
+	color: #1A1A1A;
+	font-weight: bold;
+}
+.resultList .result {
+	margin-bottom: 30px;
+	height: 90px;
+	font-size: 12px;
+	cursor: pointer;
+}
+.resultList .result:hover dt,
+.resultList .result:hover p {
+	color: #DBAD3D;
+}
+.resultList .result:hover .imgbox {
+	transform: translateX(3px);
+}
+.result .imgbox,
+.result .content {
+	float: left;
+	height: 90px;
+}
+.result .imgbox {
+	width: 90px;
+	margin-right: 28px;
+	border-radius: 6px;
+	overflow: hidden;
+}
+.result .imgbox img {
+	width: 100%;
+	height: 100%;
+}
+.resultList dl {
+	width: 500px;
+} 
+.resultList dl dt {
+	margin-bottom: 10px;
+}
+.resultList dl dt:only-child {
+	margin-top: 35px;
+	margin-bottom: 0;
+}
+.resultList dl dd {
+	line-height: 1.8;
+	width: 100%;
+	height: 62px;
+	overflow: hidden;
+}
+.resultList dd p {
+	width: 100%;
+}

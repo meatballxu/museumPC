@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+	<html lang="zh-CN">
+	  <head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>谢子龙影像艺术馆</title>
+		<link rel="stylesheet" href="js/swiper/swiper.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/index.css">
+	</head>
+	<body>
+		<a class="index-nav-arrow-down animated" href="javascript:"><img src="img/index/arrow.png" /></a>
+		<a class="index-nav-arrow-up animated" style="display: none;" href="javascript:"><img src="img/index/arrow.png" /></a>
+		<div class="swiper-container index-page-2">
+		  <div class="swiper-wrapper">
+		    <div class="swiper-slide">
+		    		<div class="index-imgBg ba1"></div>
+		    		<div class="index-bgTxt txt1 fadeIn animated">
+		    			<h1>CURRENT</h1>
+		    			<h1>EXHIBITIONS</h1>
+		    			<h2>正在展出</h2>
+		    			<p><span>中法文化之春影像艺术三联展</span><span>2018/4/29——2018/6/10</span></p>
+		    			<a class="btn btn-alpha" href="">点击参观</a>
+		    		</div>
+		    		
+		    </div>
+		    <div class="swiper-slide">
+		    		<div class="index-imgBg ba2"></div>
+		    		<div class="index-bgTxt txt2 hide fadeIn animated">
+		    			<h1>CURRENT</h1>
+		    			<h1>EXHIBITIONS</h1>
+		    			<h2>正在展出</h2>
+		    			<p><span>洞察——亚洲女性摄影师作品联展</span><span>2018/3/24 - 2018/5/20</span></p>
+		    			<a class="btn btn-alpha" href="">点击参观</a>
+		    		</div>
+		    </div>
+		    <div class="swiper-slide">
+		    		<div class="index-imgBg ba3"></div>
+		    		<div class="index-bgTxt txt3 hide fadeIn animated">
+		    			<h1>PUBLIC EDUCATION</h1>
+		    			<h2>公共教育</h2>
+		    			<p>XPM公开课  ▏艺文沙龙  ▏亲子活动  ▏摄影课程</p>
+		    			 <a class="btn btn-alpha" href="">点击参观</a>
+		    		</div>
+		    </div>
+		    <div class="swiper-slide">
+		    		<div class="index-imgBg ba4"></div>
+		    		<div class="index-bgTxt txt4 hide fadeIn animated">
+		    			<h1>COLLECTIONS</h1>
+		    			<h2>馆藏</h2>
+		    			<p>历史影像  ▏相机馆藏  ▏摄影出版物  ▏当代影像</p>
+		    			<a class="btn btn-alpha" href="">点击参观</a>
+		    		</div>
+		    </div>
+		    <div class="swiper-slide">
+		    		<div class="index-imgBg ba5"></div>
+		    		<div class="index-bgTxt txt5 hide fadeIn animated">
+		    			<h1>MEMBERSHIP</h1>
+		    			<h2>会员招募</h2>
+		    			<p>摄影  ▏艺术  ▏展览  ▏书籍  ▏活动</p>
+		    			<a class="btn btn-red" href="">加入会员</a>
+		    		</div>
+		    </div>
+		  </div>
+		</div>
+	    <!-- 分页器 -->
+	    <div class="swiper-pagination"></div>
+
+		<script type='text/javascript' src='js/jquery-3.3.1.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='js/bootstrap.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='js/swiper/swiper.min.js' charset='utf-8'></script>
+		<script>
+			var mySwiper = new Swiper('.swiper-container', {
+				autoplay: false,
+				direction : 'vertical',
+				pagination: {
+					el: '.swiper-pagination',
+					clickable :true,
+				},
+				on: {
+					slideChangeTransitionStart: function(){
+						if(this.activeIndex==4) {
+							$(".index-nav-arrow-down").hide();
+						}else {
+							$(".index-nav-arrow-down").show();
+						}
+						if(this.activeIndex==0) {
+							$(".index-nav-arrow-up").hide();
+						}else {
+							$(".index-nav-arrow-up").show();
+						}
+					},
+					slideChangeTransitionEnd: function(){
+						$(".swiper-slide .animated").addClass("hide");
+						$(".swiper-slide").eq(this.activeIndex).find(".animated").removeClass("hide");
+					},
+				},
+			})
+			$(".index-nav-arrow-down,.index-nav-arrow-up").hover(function(){
+					$(this).removeClass("animated");
+				},function(){
+					$(this).addClass("animated");
+			});
+			$(".index-nav-arrow-up").click(function(){
+				 mySwiper.slidePrev();
+			});
+			$(".index-nav-arrow-down").click(function(){
+				 mySwiper.slideNext();
+			});
+		</script>
+	</body>
+</html>

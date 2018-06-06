@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+	<html lang="zh-CN">
+	  <head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>谢子龙影像艺术馆</title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../css/login.css">
+	</head>
+	<body>
+<!--		<div class="login-bg"></div>-->
+		<div class="main-menu sec">
+			<div class="second">
+				<a class="gohome" href="index2.html"><i class="iconfont icon-fanhui mr10"></i>HOME</a>
+			</div>
+		</div>
+		
+		<div class="loginContainer">
+			<div class="loginBox regBox">
+				<div><img src="../img/login/login-logo.png" /></div>
+				<div class="top">
+					<font class="bold">填写会员资料</font>
+				</div>
+				<p class="tGrey">Fill in membership information</p>
+				<ul class="registerForm">
+					<li>
+						<label for="name">姓名</label>
+						<input class="fo name" id="name" type="text" placeholder="请输入您的姓名" />
+					</li>
+					<li>
+						<label for="tel">电话</label>
+						<input class="fo tel" id="tel" type="text" placeholder="请输入您的电话" />
+					</li>
+					<li>
+						<label for="oid">身份证</label>
+						<input class="fo oid" id="oid" type="text" placeholder="请输入您的身份证号码" />
+					</li>
+					<li>
+						<label for="rec">推荐人</label>
+						<input class="fo rec" id="rec" type="text" placeholder="请输入您的推荐人姓名（选填）" />
+					</li>
+				</ul>
+				<p class="tRed f14 text-center bold">确认资料，扫码支付会员费</p>
+				<div class="mt15 text-center">
+					<img class="orcode" src="../img/login/orcode.jpg" />
+				</div>
+				<p class="f12 mt20 text-center">会员卡仅限会员本人使用，会籍有效期1年</p>
+			</div>
+		</div>
+		
+		<script type='text/javascript' src='../js/jquery-3.3.1.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../js/bootstrap.min.js' charset='utf-8'></script>
+		<script>
+			$("input.fo").focus(function(){
+				$(this).closest("li").addClass("on")
+			});
+			$("input.fo").blur( function(){
+				$(this).closest("li").removeClass("on")
+			});
+		</script>
+	</body>
+</html>
