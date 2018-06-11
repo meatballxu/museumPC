@@ -9,7 +9,13 @@
 		<link rel="stylesheet" href="css/common.css">
 	</head>
 	<body>
-		<div class="main-menu fir">
+		<div style="margin-top: 200px;">
+			<a data="menu1" href="#" class="btn btn-red">白底菜单（未登录）</a>
+			<a data="menu2" href="#" class="btn btn-red">白底菜单（已登录）</a>
+			<a data="menu3" href="#" class="btn btn-red">透明底菜单</a>
+		</div>
+		
+		<div id="menu1" class="main-menu fir" style="display: none;">
 			<div class="first ma10">
 				<div class="logo"><img src="img/logo-nav.png" /></div>
 				<div class="item">
@@ -41,7 +47,7 @@
 			</div>
 		</div>
 		<div>--------------------------------------------------------------------</div>
-		<div class="main-menu fir">
+		<div id="menu2" class="main-menu fir" style="display: none;">
 			<div class="first">
 				<div class="logo"><img src="img/logo-nav.png" /></div>
 				<div class="item">
@@ -73,7 +79,7 @@
 			</div>
 		</div>
 		<div>--------------------------------------------------------------------</div>
-		<div style="background-color: #414141;">
+		<div id="menu3" style="background-color: #414141;position: fixed;height: 200px;width: 100%;top: 0;display: none;">
 			<div class="main-menu sec">
 				<div class="first ma10">
 					<div class="logo"><img src="img/logo-nav.png" /></div>
@@ -106,12 +112,31 @@
 				</div>
 			</div>
 		</div>
-		
-		
 		<script type='text/javascript' src='js/jquery-3.3.1.min.js' charset='utf-8'></script>
 		<script>
 			
-			$(".search-btn").click(function() {
+//固定菜单栏
+var divOffsetTop = 90;
+window.onscroll=function(){
+	// 计算页面滚动了多少（需要区分不同浏览器）    
+	var topVal = 0;    
+	if(window.pageYOffset){//这一条滤去了大部分， 只留了IE678    
+		topVal = window.pageYOffset;
+	}
+	else if(document.documentElement.scrollTop ){//IE678 的非quirk模式    
+		topVal = document.documentElement.scrollTop;
+	}    
+	else if(document.body.scrolltop){//IE678 的quirk模式    
+		topVal = document.body.scrolltop;
+	}
+	if(topVal <= divOffsetTop){    
+		$(".main-menu.fir.fix").removeClass("fix");
+	}    
+	else {
+		$(".main-menu.fir").addClass("fix");
+	}    
+};
+		    $(".search-btn").click(function() {
 				var sb = $(this).closest(".main-menu").find(".searchBox");
 				if(sb.is(':visible')) {
 					sb.slideUp();
@@ -124,6 +149,14 @@
 			
 			$(".show-fir").click(function() {
 				$(this).closest(".main-menu").removeClass("sec").addClass("fir")
+			});
+			
+		</script>
+		
+		<script>
+			$(".btn-red").click(function(){
+				$("#menu1,#menu2,#menu3").hide();
+				$("#"+$(this).attr("data")).show();
 			});
 		</script>
 	</body>

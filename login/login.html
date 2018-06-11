@@ -48,7 +48,25 @@
 					<a class="btn btn-black mr15" href="#">登录</a>
 					<a class="btn btn-white" href="#">注册</a>
 				</div>
-				<div><img src="../img/login/login-wechat.png" /></div>
+				<div><img class="skipWechat" src="../img/login/login-wechat.png" /></div>
+			</div>
+			
+			<div class="loginBox" style="display: none;">
+				<div><img src="../img/login/login-logo.png" /></div>
+				<div class="top" style="margin-top: 64px;">
+					<font>微信二维码登录</font>
+				</div>
+				<p class="tGrey">WeChat QR Code Login</p>
+				<div class="text-center mt50">
+					<img class="or" src="../img/login/orcode.jpg"   />
+				</div>
+				<div class="text-center tGrey mt10">
+					请使用微信扫描二维码登录
+				</div>
+				
+				<div class="mt80">
+					<a class="tGrey backTo" href="javascript:"><i class="iconfont icon-fanhui mr10"></i>账号登陆</a>
+				</div>
 			</div>
 		</div>
 		
@@ -61,6 +79,19 @@
 			$("input.fo").blur( function(){
 				$(this).closest("li").removeClass("on")
 			});
+			$(".skipWechat").blur( function(){
+				$(".loginBox:first-child").hide();
+				$(".loginBox:last-child").fadeIn();
+			});
+			$(".skipWechat").click( function(){
+				$(".loginBox:first-child").hide();
+				$(".loginBox:last-child").fadeIn();
+			});
+			$(".backTo").click( function(){
+				$(".loginBox:last-child").hide();
+				$(".loginBox:first-child").fadeIn();
+			});
+			
 		</script>
 	</body>
 </html>

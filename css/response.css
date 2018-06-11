@@ -1,3 +1,10 @@
+.searchResult {
+	margin-top: 96px;
+}
+.searchResult .small-container > h1.mt50:first-child {
+	margin-top: 0;
+	padding-top: 50px;
+}
 .searchResult h1 {
 	font-size: 20px;
 	color: #1A1A1A;
@@ -10,7 +17,8 @@
 	cursor: pointer;
 }
 .resultList .result:hover dt,
-.resultList .result:hover p {
+.resultList .result:hover p,
+.resultList .result:hover dd.tGrey {
 	color: #DBAD3D;
 }
 .resultList .result:hover .imgbox {

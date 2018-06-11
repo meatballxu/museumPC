@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+	<html lang="zh-CN">
+	  <head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>谢子龙影像艺术馆</title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="../css/common.css">
+		<link rel="stylesheet" href="../css/detail.css">
+	</head>
+	<body class="detailPage">
+		<script type="text/javascript" src="../js/nav.js" ></script>
+		<div class="banner-box" style="background-image: url(../img/banner/visit.jpg);">
+			<div class="main-container"><h1>Visit</h1></div>
+		</div>
+		<div class="main-container">
+			<div class="tabs-nav mt50">
+				<a class="on" href="javascript:">参观信息</a>
+			</div>
+			<div class="tabs-content">
+				<img class="mt50" src="../img/XPM/visit0.jpg" />
+				<img src="../img/XPM/visit1.jpg" />
+				<img src="../img/XPM/visit2.jpg" />
+				<img src="../img/XPM/visit3.jpg" />
+				<img src="../img/XPM/visit4.jpg" />
+				<div style="border-top: 1px solid #D8D8D8;">
+					<img class="mt110" src="../img/XPM/visit5.jpg" />
+				</div>
+				
+			</div>
+		</div>
+		
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="joinMember" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">填写会员资料</h4>
+            </div>
+            <div class="modal-body">
+            		<ul class="registerForm">
+					<li>
+						<label for="name">姓名</label>
+						<input class="fo name" id="name" type="text" placeholder="请输入您的姓名" />
+					</li>
+					<li class="error"><span><i class="iconfont icon-error"></i>超过16个字</span></li>
+					<li>
+						<label for="tel">电话</label>
+						<input class="fo tel" id="tel" type="text" placeholder="请输入您的电话" />
+					</li>
+					<li class="error"><span></span></li>
+					<li>
+						<label for="oid">身份证</label>
+						<input class="fo oid" id="oid" type="text" placeholder="请输入您的身份证号码" />
+					</li>
+					<li class="error"><span></span></li>
+					<li>
+						<label for="rec">推荐人</label>
+						<input class="fo rec" id="rec" type="text" placeholder="请输入您的推荐人姓名（选填）" />
+					</li>
+					<li class="error"><span></span></li>
+				</ul>
+				
+				<p class="tRed f14 text-center bold">确认资料，扫码支付会员费</p>
+				<div class="mt15 text-center">
+					<img class="orcode" src="../img/login/orcode.jpg" />
+				</div>
+				<p class="f12 mt20 text-center">会员卡仅限会员本人使用，会籍有效期1年</p>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+		<div class="h100"></div>
+		<script type="text/javascript" src="../js/footer.js" ></script>
+		<script type='text/javascript' src='../js/jquery-3.3.1.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../js/bootstrap.min.js' charset='utf-8'></script>
+		<script src="../js/common.js"></script>
+		<script src="../js/vip.js"></script>
+		<script>
+			setNav(1);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,383 @@
+.topic {
+	position: relative;
+	height: 120px;
+}
+.topic h2,
+.topic h3 {
+	position: absolute;
+	left: 0;
+} 
+.topic h2 {
+	font-weight: bold;
+	font-size: 36px;
+	color: #1A1A1A;
+	z-index: 3;
+	top: 0;
+}
+.topic h3 {
+	z-index: 2;
+	top: 5px;
+	font-size: 64px;
+	color: #EBEBEB;
+}
+.redForm .inputline.code .codeimg {
+	width: 120px;
+	height: 41px;
+	margin: 0 5px;
+}
+.redForm .inputline.code a {
+	font-size: 20px;
+	color: #7ABC31;
+}
+.detailBox [class^="arrow"] {
+	height: 34px;
+	width: 34px;
+	position: absolute;
+}
+.detailBox .arrow1 {
+	border-top: #1A1A1A 6px solid;
+	border-left: #1A1A1A 6px solid;
+	left: 0;
+	top: 0;
+}
+.detailBox .arrow2 {
+	border-top: #1A1A1A 6px solid;
+	border-right: #1A1A1A 6px solid;
+	top: 0;
+	right: 0;
+}
+.detailBox .arrow3 {
+	border-bottom: #1A1A1A 6px solid;
+	border-right: #1A1A1A 6px solid;
+	bottom: 0;
+	right: 0;
+}
+.detailBox .subject h1 {
+	text-align: left;
+	font-family: Arial-Black;
+	font-size: 54px;
+	color: #1A1A1A;
+	line-height: 68px;
+	position: absolute;
+	top: 84px;
+	left: 42px;
+	width: 350px;
+}
+.detailBox .subject h2 {
+	font-size: 46px;
+	font-weight: bold;
+}
+.detailBox .subject h3 {
+	margin-top: 30px;
+	font-weight: bold;
+}
+.detailBox .subject img {
+	max-height: 459px;
+	max-width: 1200px;
+}
+.detailBox .subject ul {
+    padding-left: 230px;
+    padding-top: 30px;
+}
+.detailBox .subject ul li {
+	list-style: disc;
+}
+.detailBox .subject,
+.detailBox .chapter {
+	padding: 0 40px;
+	margin-bottom: 80px;
+}
+.detailBox .subject .text {
+	padding-top: 180px;
+	padding-left: 430px;
+}
+.chapter {
+	font-size: 0;
+}
+.chapter > div{
+	font-size: 14px;
+}
+.chapter1 .text,
+.chapter1 .text>h1,
+.chapter1 .text>h2,
+.chapter1 .text>p {
+	display: inline-block;
+	width: 546px;
+}
+.chapter1 .text h1 {
+	font-size: 48px;
+	margin-bottom: 10px;
+}
+.chapter1 .text h2 {
+	font-size: 24px;
+	margin-bottom: 50px;
+	font-weight: 600;
+}
+.chapter .text>p {
+	margin-top: 50px;
+	font-size: 14px;
+	line-height: 22px;
+}
+.chapter1 .info {
+	display: inline-block;
+	width: 130px;
+	vertical-align: top;
+	font-size: 12px;
+	padding: 0 10px 0 30px;
+}
+.chapter1 .image {
+	display: inline-block;
+	width: 442px;
+	overflow: hidden;
+}
+.chapter .text h1.ico1 {
+	background: url(../img/XPM/detail1.jpg) no-repeat left;
+	padding-left: 50px;
+}
+.chapter .text h1.ico2 {
+	background: url(../img/XPM/detail2.jpg) no-repeat left;
+	padding-left: 50px;
+}
+.carousel-control {
+	top: 50%;
+	margin-top: -20px;
+	height: 40px;
+	width: 40px;
+	color: #1A1A1A;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    text-shadow: none;
+    font-weight: bold;
+}
+.carousel-control.left {
+	left: -40px;
+	background:none;
+}
+.carousel-control.right {
+    color: #1A1A1A;
+	right: -40px;
+	background:none;
+}
+.chapter .timg {
+	width: 50%;
+	display: inline-block;
+	margin-bottom: 50px;
+}
+.chapter .timg img {
+	width: 95%;
+}
+.aboutXPM .chapter .timg:nth-child(2n+1) img,
+.aboutXPM .chapter .timg:nth-child(2n+1) p {
+	margin-left: 4%;
+}
+.chapter .timg .grid {
+	position: absolute;
+	height: 109px;
+	width: 63px;
+	right: 0;
+	bottom: 0;
+}
+.business .chapter {
+	border-top: 1px dashed #DFDFDF;
+	padding: 80px 40px 0;
+}
+.business .chapter .timg {
+	margin-bottom: 0;
+}
+.business .timg:nth-child(2n) {
+	vertical-align: bottom;
+	padding-left: 40px;
+}
+.chapter h4 {
+	font-size: 20px;
+	font-weight: bold;
+	padding-bottom: 40px;
+}
+.chapter h4 i {
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	font-size: 50px;
+	font-weight: normal;
+	position: relative;
+     font-family: arial;
+}
+.chapter h4 i:before {
+	position: absolute;
+    content: "";
+    left: 0;
+    top: -3px;
+    height: 50px;
+    width: 50px;
+    background-color: #FFFFFF;
+    border-color: #000000;
+    border-width: 0 0 0 1px ;
+    border-style: solid;
+    transform: rotate(45deg);
+    -webkit-transform-origin: left bottom;
+	transform-origin: left bottom
+}
+.chapter .timg.only {
+	width: 100%;
+	font-size: 0;
+}
+.chapter .timg.only h4 {
+	width: 250px;
+}
+.chapter .timg.only p {
+	font-size: 14px;
+	width: calc(100% - 250px);
+}
+.chapter .timg.only h4,
+.chapter .timg.only p {
+	display: inline-block;
+	vertical-align: middle;
+}
+.detailBox.joinUs .subject .text {
+    padding-top: 80px;
+    padding-left: 630px;
+}
+.detailBox .subject h5 {
+	font-size: 160px;
+	color: rgba(0,0,0,0.04);
+	line-height: 150px;
+}
+.detailBox.joinUs .subject ul {
+    padding-left: 130px;
+}
+.joinUs .chapter:nth-child(n+1) {
+	border-bottom: 1px dashed #DFDFDF;
+    padding: 0 0 40px;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+.joinUs .chapter:last-child {
+	border-bottom: none;
+}
+.joinUs.detailBox .chapter {
+    margin-bottom: 40px;
+}
+.chapter3 {
+	overflow: hidden;
+}
+.chapter3 .aline {
+	font-size: 0;
+	margin-left: -45px;
+	margin-right: -45px;
+}
+.chapter3 .aline > div {
+	width: 33.33%;
+	display: inline-block;
+	position: relative;
+	padding: 0 45px;
+	vertical-align: top;
+}
+.chapter3 dt {
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+.chapter3 dd {
+	font-size: 14px;
+	color: #3F3F3F;
+	line-height: 20px;
+}
+/*会员招募*/
+.chapter > .arrow3:first-child {
+	top: 0;
+	left: 0;
+}
+.chapter4 h3 {
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: -56px;
+	height: 30px;
+	margin-bottom: 50px;
+}
+.chapter4:first-child {
+	padding-top: 80px;
+}
+.chapter4 b {
+	font-size: 48px;
+	font-weight: normal;
+	color: #EBEBEB;
+	display: block;
+}
+.chapter4 .timg {
+	vertical-align: bottom;
+}
+.chapter4 h3 {
+	position: relative;
+	padding-left: 44px;
+}
+.chapter4 h3[class^="ico"]:before {
+	content: "";
+	height: 24px;
+	width: 24px;
+	left: 0px;
+	position: absolute;
+}
+.chapter4 h3.ico1:before {
+	background: url(../img/usericon.png) no-repeat 0 -46px;
+}
+.chapter4 h3.ico2:before {
+	background: url(../img/usericon.png) no-repeat 0 -2px;
+}
+.chapter4 h3.ico3:before {
+	background: url(../img/usericon.png) no-repeat 0 -88px;
+}
+.registerForm li.on {
+	border-left-color: #E4022C;
+	border-left-width: 2px;
+	border-radius: 0 4px 4px 0;
+}
+
+/* 注册 */
+#joinMember .modal-dialog {
+	width: 542px;
+}
+.registerForm li {
+	background: #FFFFFF;
+	border: 1px solid #F0F0F0;
+	border-radius: 4px;
+	height: 54px;
+	padding: 0 0 0 20px;
+	position: relative;
+}
+.registerForm li.error {
+	border: none;
+	text-align: right;
+	line-height: 54px;
+}
+.registerForm li.error i {
+	margin-right: 5px;
+}
+.registerForm label {
+	color: #000000;
+	font-size: 16px;
+	line-height: 36px;
+	font-weight: normal;
+	position: absolute;
+	left: 20px;
+	margin-top: 8px;
+}
+.registerForm li.on label {
+	left: 19px;
+}
+.registerForm input {
+	border: none;
+	width: 100%;
+	float: right;
+	padding-right: 20px;
+	line-height: 34px;
+	text-align: right;
+	margin-top: 10px;
+	font-size: 16px;
+}
+.orcode {
+	border: 6px solid #E4022C;
+	width: 124px;
+	height: 124px;
+}
+/* 注册 end */
+
