@@ -374,10 +374,330 @@
 	margin-top: 10px;
 	font-size: 16px;
 }
-.orcode {
+.modal .orcode {
 	border: 6px solid #E4022C;
 	width: 124px;
 	height: 124px;
 }
 /* 注册 end */
+.switchBar {
+	background: url(../img/line.jpg) left no-repeat;
+	text-align: right;
+	font-size: 0;
+	position: relative;
+	margin-bottom: 20px;
+}
+.switchBar span {
+	position: absolute;
+	left: 40px;
+	display: block;
+	font-size: 14px;
+	padding-right: 10px;
+	background-color: #FFFFFF;
+}
+.switchBar > a {
+	display: inline-block;
+	font-size: 12px;
+	color: #999999;
+	background-color: #FFFFFF;
+	margin: 0 4px;
+	position: relative;
+}
+.switchBar > a.on {
+	font-size: 14px;
+	color: #1A1A1A;
+	font-weight: bold;
+}
+.switchBar > a:after {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+	height: 2px;
+	width: 0;
+	-webkit-transition:all .5s;
+	transition:all .5s;
+	background: #1A1A1A;
+}
+.switchBar > a.on:after,
+.switchBar > a:hover:after {
+	width: 100%;
+}
+.switchBar > a:hover {
+	color: #1A1A1A;
+}
 
+.newsTop {
+	position: relative;
+	height: 668px;
+	padding: 34px 0 34px 34px;
+	margin-top: 50px;
+}
+
+.newsTop>img {
+	height: 600px;
+	float: left;
+}
+
+.newsTop h1 {
+	font-size: 24px;
+	font-weight: bold;
+	letter-spacing: -1px;
+	margin-bottom: 15px;
+}
+
+.newsTop h2 {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 50px;
+}
+
+.newsTop h1,
+.newsTop h2,
+.newsTop p,
+.newsTop .showinfo  {
+	float: left;
+	width: 740px;
+	padding-left: 70px;
+}
+
+.newsTop p,
+.newsTop .showinfo {
+	position: relative;
+	min-height: 200px;
+}
+
+.newsTop p:after,
+.newsTop .showinfo:after {
+	content: "";
+	position: absolute;
+	bottom: -20px;
+	height: 1px;
+	border-bottom: 1px dashed #DFDFDF;
+	left: 70px;
+	width: 650px;
+}
+
+.newsTop .orcode {
+	position: absolute;
+	bottom: 34px;
+	left: 510px;
+	background: #FFFFFF;
+	text-align: center;
+	border: 1px solid #EBEBEB;
+	width: 106px;
+	height: auto;
+}
+
+.newsTop .orcode span {
+	display: block;
+	font-size: 12px;
+	line-height: 22px;
+	border-bottom: 1px solid #EBEBEB;
+}
+
+.newsTop .orcode div {
+	padding: 3px 3px;
+}
+
+.newsTop .orcode div img {
+	height: 98px;
+	height: 98px;
+}
+
+.newsText {
+	padding: 80px 34px;
+}
+
+.pointImg {
+	width: 994px;
+	height: 580px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.pointImg .btn {
+	position: absolute;
+	width: 30px;
+	height: 50px;
+	top: 510px;
+	cursor: pointer;
+	z-index: 99;
+	font-weight: bold;
+	padding: 0;
+}
+.pointImg .btn:active {
+	box-shadow: none;
+}
+.pointImg .prev {
+	left: -70px;
+}
+
+.pointImg #prevTop,
+.pointImg #nextTop {
+	top: 213px;
+	width: 46px;
+	height: 48px;
+}
+
+
+/*.pointImg #prevTop{background: url(../images/prevBtnTop.png) 0 0 no-repeat;}
+.pointImg #nextTop{background: url(../images/nextBtnTop.png) 0 0 no-repeat;}*/
+
+.pointImg .next {
+	right: -70px;
+}
+
+.pointImg .prev i,
+.pointImg .next i {
+	font-size: 20px;
+	line-height: 50px;
+}
+
+.pointImg li {
+	float: left;
+}
+
+.pointImg .cf li {
+	position: relative;
+	color: #fff;
+}
+
+.pointImg .cf a {
+	display: block;
+	width: 994px;
+	height: 484px;
+	position: absolute;
+	color: #fff;
+}
+
+.pointImg .cf li span {
+	display: block;
+	width: 994px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding: 10px 20px;
+	line-height: 22px;
+	text-align: left;
+	background: rgba(0, 0, 0, 0.6);
+	filter: progid:DXImageTransform.Microsoft.gradient( GradientType=0, startColorstr="#60000000", endColorstr="#60000000") 6
+}
+
+.pointImg .picBox {
+	height: 484px;
+	position: relative;
+	overflow: hidden;
+}
+
+.pointImg .picBox ul {
+	height: 484px;
+	position: absolute;
+}
+
+.pointImg .picBox li {
+	width: 994px;
+	height: 484px;
+	text-align: center;
+}
+
+.pointImg .picBox li img {
+	max-width: 994px;
+	max-height: 484px;
+}
+
+.pointImg .listBox {
+	width: 880px;
+	height: 100px;
+	margin: 0 auto;
+	position: relative;
+	padding: 6px 0 10px;
+	overflow: hidden;
+}
+
+.pointImg .listBox ul {
+	height: 80px;
+	padding-top: 15px;
+	position: absolute;
+}
+
+.pointImg .listBox li {
+	width: 106px;
+	height: 60px;
+	padding: 0 8px;
+	cursor: pointer;
+	position: relative;
+}
+
+.pointImg .listBox li i {
+	display: none;
+}
+
+.pointImg .listBox li a {
+	display: block;
+	width: 90px;
+	height: 60px;
+}
+
+.pointImg .listBox li img {
+	width: 90px;
+	height: 60px;
+}
+
+.pointImg .listBox .on img {
+	width: 90px;
+	height: 60px;
+	border: 2px solid #1A1A1A;
+}
+
+.pointImg .listBox .on i {
+	display: block;
+}
+
+
+.pointBox >p{
+	font-size: 12px;
+	padding-left: 20px;
+	margin-left: 34px;
+	position: relative;
+	margin-bottom: 30px;
+}
+.pointBox >p:before {
+	content: "";
+	position: absolute;
+	left: 0;
+     top: 7px;
+	display: block;
+	width: 6px;
+	height: 6px;
+	border-radius: 100%;
+	background-color: #1A1A1A;
+}
+.pointBox #prevTop,.pointBox #nextTop {
+	display: none;
+}
+.detailBox .focus {
+    display: inline-block;
+    border: 1px solid #EBEBEB;
+    padding: 3px 8px;
+    font-size: 12px;
+    margin-left: 50px;
+    line-height: 1.2;
+}
+.detailBox .focus a i {
+	font-size: 14px;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+.focus a.on,
+.focus a:hover {
+	color: #E4022C;
+}
+.focus a.on i.icon-weishoucang,
+.focus a i.icon-shoucang {
+	display: none;
+}
+.focus a.on i.icon-shoucang {
+	display: inline-block;
+}
