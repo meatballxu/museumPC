@@ -386,6 +386,7 @@
 	font-size: 0;
 	position: relative;
 	margin-bottom: 20px;
+	height: 21px;
 }
 .switchBar span {
 	position: absolute;
@@ -700,4 +701,33 @@
 }
 .focus a.on i.icon-shoucang {
 	display: inline-block;
+}
+.VRbox {
+	padding: 0 16px;
+}
+.VRbox .vrbg {
+	height: 890px;
+	padding-top: 114px;
+	padding-left: 17px;
+	background: url(../img/XPM/showVR.jpg) no-repeat left;
+}
+.VRbox .content {
+	height: 493px;
+	width: 1034px;
+	background-color: #eee;
+}
+.videobox .vdbg {
+	height: 564px;
+	width: 1132px;
+	background: url(../img/XPM/showVedio.png) no-repeat center;
+	position: relative;
+}
+.videobox .content {
+	width: 786px;
+	height: 488px;
+	background: #1A1A1A;
+	box-shadow: -6px 6px 9px 0 rgba(0,0,0,0.12);
+	position: absolute;
+	top: 40px;
+	right: 40px;
 }

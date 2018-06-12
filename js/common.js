@@ -8,3 +8,9 @@ function switchShow(tabs,content,$obj) {
 		$("#"+$obj.attr("data-tar")).fadeIn();
 	}
 }
+$(".switchBar a").click(function(){
+	if(!$(this).hasClass("on")) {
+		$(".switchBar a").removeClass("on");
+		$(this).addClass("on")
+	}
+});
