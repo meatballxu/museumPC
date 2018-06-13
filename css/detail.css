@@ -439,6 +439,7 @@
 .newsTop>img {
 	height: 600px;
 	float: left;
+	max-width: 404px;
 }
 
 .newsTop h1 {
@@ -730,4 +731,79 @@
 	position: absolute;
 	top: 40px;
 	right: 40px;
+}
+.chapter5 {
+	padding: 0;
+	margin-top: 50px;
+	position: relative;
+	height: 400px;
+}
+.chapter5 .img,.chapter5 .text {
+	display: inline-block;
+	position: absolute;
+	height: 366px;
+}
+.chapter5 .img  {
+	padding: 0;
+	width: 580px;
+}
+.chapter5 .img img {
+	max-height: 100%;
+	max-width: 100%;
+}
+.chapter5 .text  {
+	width: calc(100% - 620px);
+}
+.educationList .chapter:nth-child(2n+1) .img,
+.educationList .chapter:nth-child(2n) .text {
+	left: 0;
+}
+.educationList .chapter:nth-child(2n) .img,
+.educationList .chapter:nth-child(2n+1) .text {
+	right: 0;
+}
+.chapter5 h1  {
+	font-size: 24px;
+	font-weight: bold;
+	height: 30px;
+}
+.chapter5 .text>p {
+	margin-top: 12px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.chapter5 .intro {
+	position: absolute;
+	bottom: 0;
+	max-height: 220px;
+	overflow: hidden;
+}
+.chapter5 .intro b {
+	display: block;
+	line-height: 2;
+}
+.chapter5 .intro p {
+	word-break: break-all;
+	word-wrap: break-word;
+}
+.chapter5 {
+	cursor: pointer;
+}
+.chapter5 .img,
+.chapter5 h1,
+.chapter5 .text>p,
+.chapter5 div {
+	-webkit-transition:all .5s;
+	transition:all .5s;
+}
+.chapter5:hover h1,
+.chapter5:hover p,
+.chapter5:hover div {
+	color: #DBAD3D;
+	-webkit-transform: translate(2px,2px);
+	transform: translate(2px,2px);
+}
+.chapter5:hover img {
+	box-shadow: 0 5px 20px rgba(0,0,0,.3);
 }

@@ -5,3 +5,6 @@ $(".tabs-nav a").click(function(){
 $(".addtofav").click(function(){
 	$(this).toggleClass("on");
 });
+$(".educationIndex .detailBox img,.educationIndex .detailBox .topic").click(function(){
+	window.location.href = $(this).closest(".detailBox").attr("data-tar");
+});
