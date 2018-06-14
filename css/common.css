@@ -601,6 +601,33 @@ footer .orcode h4 {
 	text-align: center;
 	margin-top: 14px;
 }
+footer .logo {
+	background: url(../img/footer.jpg) no-repeat top;
+	height: 113px;
+	width: 143px;
+	padding-top: 90px;
+}
+footer .logo a {
+	display: inline-block;
+	vertical-align: baseline;
+}
+footer .logo  a>img:last-child,
+footer .logo  a:active > img:first-child,
+footer .logo  a:hover > img:first-child {
+	display: none;
+}
+footer .logo  a:active > img:last-child,
+footer .logo  a:hover > img:last-child {
+	display: inline-block;
+}
+footer .backup {
+	background: #F2F2F2;
+	font-size: 14px;
+	color: #999999;
+	text-align: center;
+	height: 30px;
+	line-height: 29px;
+}
 .tabs a {
 	color: #999999;
 	padding: 5px 18px;
@@ -870,4 +897,25 @@ font-weight: bold;
 .location font {
 	color: #1A1A1A;
 	font-weight: bold;
+}
+
+/*闪现弹出框*/
+.popWin {
+	z-index: 999999;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin: -40px 0 0 -180px;
+	width: 160px;
+	border-radius: 5px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	text-align: center;
+	background: rgba(0,0,0,0.5);
+}
+.popWin.success {
+	color: #fff;
+}
+.popWin.failure {
+	color: #fff;
 }

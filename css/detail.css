@@ -336,6 +336,10 @@
 #joinMember .modal-dialog {
 	width: 542px;
 }
+#joinMember .registerForm {
+	margin-top: -30px;
+     margin-bottom: 30px;
+}
 .registerForm li {
 	background: #FFFFFF;
 	border: 1px solid #F0F0F0;
@@ -348,6 +352,8 @@
 	border: none;
 	text-align: right;
 	line-height: 54px;
+    height: auto;
+    min-height: 20px;
 }
 .registerForm li.error i {
 	margin-right: 5px;
@@ -806,4 +812,13 @@
 }
 .chapter5:hover img {
 	box-shadow: 0 5px 20px rgba(0,0,0,.3);
+}
+.visitPage img {
+	width: 100%;
+}
+.visitPage .VRbox {
+	height: 924px;
+	margin-top: 50px;
+	padding: 150px 0 0;
+	background: url(../img/XPM/visit0.jpg) no-repeat center;
 }

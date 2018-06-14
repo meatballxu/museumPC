@@ -36,6 +36,7 @@
 						<input class="fo pwd" id="pwd" type="password" placeholder="请输入账户密码" />
 					</li>
 				</ul>
+				<div class="error"><i class="iconfont icon-error"></i>手机号格式错误</div>
 				<div class="ckline">
 					<div class="rmbpwd">
 						<input type="checkbox" id="rmb" /><label for="rmb">记住密码</label>
@@ -45,8 +46,8 @@
 					</div>
 				</div>
 				<div class="mb40">
-					<a class="btn btn-black mr15" href="#">登录</a>
-					<a class="btn btn-white" href="#">注册</a>
+					<a class="btn btn-black mr15" href="javascript:callPop(0,'请求超时')">登录</a>
+					<a class="btn btn-white" href="javascript:callPop(0,'请求超时')">注册</a>
 				</div>
 				<div><img class="skipWechat" src="../img/login/login-wechat.png" /></div>
 			</div>
@@ -72,6 +73,7 @@
 		
 		<script type='text/javascript' src='../js/jquery-3.3.1.min.js' charset='utf-8'></script>
 		<script type='text/javascript' src='../js/bootstrap.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../js/common.js' charset='utf-8'></script>
 		<script>
 			$("input.fo").focus(function(){
 				$(this).closest("li").addClass("on")

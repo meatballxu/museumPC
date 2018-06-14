@@ -29,14 +29,14 @@ body {
 	top: 0;
 }
 .loginBox {
-	width: 520px;
+	width: 390px;
 	background-color: #FFFFFF;
 	margin: 180px 0 180px 16%;
-	padding: 45px 62px 70px 62px;
+	padding: 30px 41px 60px 41px;
 }
 .loginBox .top {
 	margin-top: 60px;
-	font-size: 24px;
+	font-size: 20px;
 	color: #999999;
 }
 .loginBox.regBox .top {
@@ -52,11 +52,36 @@ body {
 	height: 180px;
 	width: 180px;
 }
-
+.loginBox p.tGrey {
+	font-size: 12px;
+}
+.loginBox {
+	position: relative;
+}
+.loginBox div.error {
+	position: absolute;
+     top: 225px;
+    right: 60px;
+}
+.loginBox div.error i,
+.registerForm li.error i {
+	margin-right: 4px;
+}
+.registerForm li.error {
+      border: none;
+    text-align: right;
+    line-height: 14px;
+     height: auto;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+.registerForm li.error span:empty {
+	display: none;
+}
 
 .loginForm {
 	margin-top: 40px;
-	width: 360px;
+	width: 297px;
 	box-shadow: 1px 5px 15px rgba(0,0,0,0.08);
 }
 .loginForm li {
@@ -83,7 +108,7 @@ body {
 	border: none;
 	color: #1A1A1A;
 	font-size: 14px;
-    width: 320px;
+    width: 270px;
     line-height: 25px ;
 }
 label {

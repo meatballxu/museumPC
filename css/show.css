@@ -159,15 +159,51 @@
 .past .showlist:first-child h2 {
 	top: 350px;
 }
-.past .showlist:nth-child(2n+1) h2 {
+.past .showlist h2 {
 	left: 80px;
 }
-.past .showlist:nth-child(2n) .topic {
-	width: 100%;
+/*.past .topic {
+	position: relative;
+	width: 379.95px;
+     height: 788px;
+    display: inline-block;
+    float: left;
+}*/
+#past {
+      overflow-y: auto;
+    overflow-x: hidden;
+}
+.past .detailBox {
+	float: left;
+}
+.past .showlist {
+	float: left;
+}
+.past .showlist .chapter {
+	float: left;
+}
+.past .showlist .Exhibitions {
+	width: 409.95px;
+}
+.past .showlist .Exhibitions:first-child {
+	margin-left: 409px;
+}
+/*
+.past .showlist .chapter .Exhibitions:nth-child(4n+1) {
+    margin-left: 0;
+}
+.past .showlist:nth-child(2n+1) .Exhibitions:nth-child(2n+1) {
+	margin-left: 409px;
+}
+.past .showlist:nth-child(2n) .Exhibitions:nth-child(2n) {
+	margin-right: 409px;
 }
 .past .showlist:nth-child(2n) h2 {
 	right: 80px;
 	left: auto;
+}
+.past .showlist:nth-child(2n) .topic {
+	width: 100%;
 }
 .past .showlist .Exhibitions:nth-child(4n+1) {
     margin-left: 0;
@@ -180,7 +216,8 @@
 }
 .past .showlist:nth-child(2n) .Exhibitions:nth-child(2n) {
 	margin-right: 409px;
-}
+}*/
+
 .listPage h1.title {
 	font-size: 48px;
 	margin-top: 60px;
