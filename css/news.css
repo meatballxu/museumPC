@@ -137,6 +137,10 @@ ul.artFace li:first-child {
 ul.artFace li:last-child {
 	width: 750px;
 }
+ul.artFace li:first-child img {
+	max-height: 100%;
+	max-width: 100%;
+}
 ul.artFace h4 {
 	font-weight: bold;
 	font-size: 18px;
@@ -197,3 +201,6 @@ ul.artFace .info {
 	display: inline-block;
 	background: #FFFFFF;
 }
+.academicEvents {
+	margin-top: 0;
+	}

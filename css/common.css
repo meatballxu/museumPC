@@ -845,6 +845,7 @@ a.close:hover {
 	padding: 6px 0;
 	width: 100%;
     text-align: left;
+    background: #FFFFFF;
 }
 .redForm .inputline .dropdown .caret {
 	float: right;

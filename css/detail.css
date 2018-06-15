@@ -487,6 +487,10 @@
 	width: 650px;
 }
 
+.newsTop .showinfo {
+	max-height: 500PX;
+	overflow: hidden;
+}
 .newsTop .orcode {
 	position: absolute;
 	bottom: 34px;
@@ -517,7 +521,9 @@
 .newsText {
 	padding: 80px 34px;
 }
-
+.newsText  big {
+	font-size: 40px;
+}
 .pointImg {
 	width: 994px;
 	height: 580px;
@@ -821,4 +827,38 @@
 	margin-top: 50px;
 	padding: 150px 0 0;
 	background: url(../img/XPM/visit0.jpg) no-repeat center;
+}
+.academicDetail .chapter1 .image.first{
+	overflow: visible;
+}
+.academicDetail .chapter1 big {
+	font-size: 40px;
+}
+.academicDetail .publishTop h1 {
+	padding-top: 520px;
+	margin-bottom: 20px;
+}
+.academicDetail .imglist {
+	position: relative;
+	padding: 40px 0;
+}
+.academicDetail .showImg .row {
+	margin-bottom: 30px;
+}
+.eventTop img {
+	max-width: 1200px;
+}
+.eventTop h1 {
+	padding-top: 52px;
+	font-size: 48px;
+	margin-bottom: 30px;
+	font-weight: bold;
+}
+.eventTop h2 {
+	font-size: 32px;
+	font-weight: bold;
+	margin-bottom: 70px;
+}
+.eventText {
+	position: relative;
 }

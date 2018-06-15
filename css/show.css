@@ -397,3 +397,110 @@
 .academicIndex .showlist:nth-child(2n+1) h2 {
 	top: 160px;
 }
+.educationIndex ul.sec{
+	height: 430px;
+	float: left;
+	width: 1200px;
+	text-align: center;
+	margin-top: 10px;
+}
+.educationIndex ul.sec li {
+	width: 250px;
+	height: 430px;
+	display: inline-block;
+	background-color: #EEEEEE;
+	margin: 0 18px;
+	position: relative;
+     vertical-align: top;
+     overflow: hidden;
+}
+.educationIndex ul.sec img {
+	width: 100%;
+	height: 100%;
+}
+.educationIndex ul.sec .tit {
+	width: 34px;
+	position: absolute;
+	height: 280px;
+	top: 0;
+	right: 0;
+	padding: 18px 7px;
+	background: #1A1A1A;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 13px;
+}
+.educationIndex .tit span {
+}
+.educationIndex .tit span:after {
+	content: "•";
+	display: block;
+}
+.educationIndex .tit small {
+	display: block;
+	width: 130px;
+	text-align: left;
+	transform:  rotate(90deg) translateX(22px);
+	transform-origin: 20px 0;
+	-webkit-transform-origin: 20px 0;
+}
+.educationIndex ul.sec {
+	margin-bottom: 40px;
+}
+.educationIndex ul.sec .focus {
+    position: absolute;
+    margin-left: 0;
+    left: 10px;
+    bottom: 10px;
+	border-radius: 100px;
+    border: none;
+    background: #1A1A1A;
+	-webkit-transition:all .5s;
+	transition:all .5s;
+}
+ ul.sec .focus.on {
+ 	background: #E4022C;
+ }
+ ul.sec .focus:hover a {
+ 	color: #E4022C;
+ }
+ul.sec .focus a {
+	color: #FFFFFF;
+}
+ ul.sec .focus.on a {
+	color: #FFFFFF;
+}
+ul.sec .focus a i.icon-shoucang,
+ul.sec .focus.on a i.icon-shoucang {
+	display: inline-block;
+}
+.academicIndex .detailBox:hover img {
+    box-shadow: none;
+}
+.academicIndex ul.sec li:hover {
+	-webkit-transition:all .5s;
+	transition:all .5s;
+    box-shadow: 0 0 15px rgba(0,0,0,.5);
+}
+.academicIndex ul.sec li:hover img {
+	-webkit-transform: scale(1.1,1.1);
+	transform: scale(1.1,1.1);
+}
+.academicList .chapter .Exhibitions:nth-child(4n+1) {
+	margin-left: 0;
+}
+.academicList .Exhibitions dd {
+	overflow: hidden;
+}
+.academicList .Exhibitions dd img {
+	-webkit-transition:all .5s;
+	transition:all .5s;
+}
+.academicList .Exhibitions dd:hover img {
+	-webkit-transform: scale(1.02) translateY(5px);
+	transform: scale(1.02) translateY(5px);
+}
+.academicList .Exhibitions dd:first-of-type {
+	background: #E9E9E9;
+	border: 1px solid #EBEBEB;
+}
