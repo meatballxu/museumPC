@@ -352,6 +352,11 @@
     text-align: right;
     left: auto;
 }
+.educationIndex .showlist .topic,
+.educationIndex .showlist {
+	width: 1200px;	
+}
+
 .education img {
 	width: 950px;
 }
@@ -388,4 +393,7 @@
 }
 .educationIndex .detailBox:hover img {
 	box-shadow: 0 5px 20px rgba(0,0,0,.5);
+}
+.academicIndex .showlist:nth-child(2n+1) h2 {
+	top: 160px;
 }
