@@ -497,10 +497,13 @@ ul.sec .focus.on a i.icon-shoucang {
 	transition:all .5s;
 }
 .academicList .Exhibitions dd:hover img {
-	-webkit-transform: scale(1.02) translateY(5px);
-	transform: scale(1.02) translateY(5px);
+	-webkit-transform: scale(1.01) translateY(5px);
+	transform: scale(1.01) translateY(5px);
 }
 .academicList .Exhibitions dd:first-of-type {
 	background: #E9E9E9;
 	border: 1px solid #EBEBEB;
+}
+.publicationList .showlist dd img {
+	max-height: 379.95px;
 }
