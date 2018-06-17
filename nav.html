@@ -13,6 +13,10 @@
 			<a data="menu1" href="#" class="btn btn-red">白底菜单（未登录）</a>
 			<a data="menu2" href="#" class="btn btn-red">白底菜单（已登录）</a>
 			<a data="menu3" href="#" class="btn btn-red">透明底菜单</a>
+		</div>>
+		<div style="margin-top: 50px;">
+			<a href="#" class="btn btn-black btn-logout">菜单切换成未登录</a>
+			<a href="#" class="btn btn-black btn-login">菜单切换成已登录</a>
 		</div>
 		
 		<div id="menu1" class="main-menu fir" style="display: none;">
@@ -36,7 +40,10 @@
 			</div>
 			<div class="user">
 				<div class="unlog"><a href="#">注册</a>&frasl;<a href="#">登录</a></div>
-				<div class="log hide"><a href="#"><img src="img/ep/head.jpg" /></a></div>
+				<div class="log hide">
+					<a href="#"><img src="img/ep/head.jpg" /></a>
+					<a href="#">退出登录</a>
+				</div>
 				<div class="show-fir"><a href="javascript:"><i class="icon iconfont icon-gengduocaidan"></i></a></div>
 			</div>
 			<div class="searchBox" style="display: none;">
@@ -68,7 +75,10 @@
 			</div>
 			<div class="user">
 				<div class="unlog hide"><a href="#">注册</a>&frasl;<a href="#">登录</a></div>
-				<div class="log"><a href="#"><img src="img/ep/head.jpg" /></a></div>
+				<div class="log">
+					<a href="#"><img src="img/ep/head.jpg" /></a>
+					<a href="#">退出登录</a>
+				</div>
 				<div class="show-fir"><a href="javascript:"><i class="icon iconfont icon-gengduocaidan"></i></a></div>
 			</div>
 			<div class="searchBox" style="display: none;">
@@ -99,10 +109,13 @@
 				<div class="second">
 					<a class="gohome" href="index2.html"><i class="iconfont icon-fanhui mr10"></i>HOME</a>
 				</div>
-				<div class="user">
+				<div class="user ma10">
 					<div class="unlog hide"><a href="#">注册</a>&frasl;<a href="#">登录</a></div>
-					<div class="log"><a href="#"><img src="img/ep/head.jpg" /></a></div>
-					<div class="show-fir"><a href="javascript:"><i class="icon iconfont icon-gengduocaidan"></i></a></div>
+					<div class="log">
+						<a href="#"><img src="img/ep/head.jpg" /></a>
+						<a href="#">退出登录</a>
+					</div>
+				<div class="show-fir"><a href="javascript:"><i class="icon iconfont icon-gengduocaidan"></i></a></div>
 				</div>
 				<div class="searchBox" style="display: none;">
 					<div class="search">
@@ -115,6 +128,16 @@
 		<script type='text/javascript' src='js/jquery-3.3.1.min.js' charset='utf-8'></script>
 		<script>
 			
+//菜单切换成未登录
+function logoutNav() {
+	$(".main-menu .user .unlog").removeClass("hide");
+	$(".main-menu .user .log").addClass("hide");
+}
+//菜单切换成已登录
+function loginNav() {
+	$(".main-menu .user .log").removeClass("hide");
+	$(".main-menu .user .unlog").addClass("hide");
+}
 //固定菜单栏
 var divOffsetTop = 90;
 window.onscroll=function(){
@@ -158,6 +181,9 @@ window.onscroll=function(){
 				$("#menu1,#menu2,#menu3").hide();
 				$("#"+$(this).attr("data")).show();
 			});
+			$(".btn-login").click(loginNav);
+			$(".btn-logout").click(logoutNav);
+			
 		</script>
 	</body>
 </html>

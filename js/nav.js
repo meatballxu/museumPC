@@ -22,7 +22,10 @@ document.writeln("		<a class=\'gohome\' href=\'index2.html\'><i class=\'iconfont
 document.writeln("	</div>");
 document.writeln("	<div class=\'user ma5\'>");
 document.writeln("		<div class=\'unlog\'><a href=\'../login/register.html'>注册</a>&frasl;<a href=\'../login/login.html\'>登录</a></div>");
-document.writeln("		<div class=\'log hide\'><a href=\'#\'><img src=\'../img/ep/head.jpg\' /></a></div>");
+document.writeln("		<div class=\'log hide\'>");
+document.writeln("			<a href=\'#\'><img src=\'../img/ep/head.jpg\' /></a>");
+document.writeln("			<a href=\'#\'>退出登录</a>");
+document.writeln("		</div>");
 document.writeln("		<div class=\'show-fir\'><a href=\'javascript:\'><i class=\'icon iconfont icon-gengduocaidan\'></i></a></div>");
 document.writeln("	</div>");
 document.writeln("	<div class=\'searchBox\' style=\'display: none;\'>");
@@ -100,3 +103,13 @@ function navBinding() {
 	fixMenu();
 }
 
+//菜单切换成未登录
+function logoutNav() {
+	$(".main-menu .user .unlog").removeClass("hide");
+	$(".main-menu .user .log").addClass("hide");
+}
+//菜单切换成已登录
+function loginNav() {
+	$(".main-menu .user .log").removeClass("hide");
+	$(".main-menu .user .unlog").addClass("hide");
+}

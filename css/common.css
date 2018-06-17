@@ -442,15 +442,18 @@ del{ text-decoration:line-through; }
 	color: #DBAD3D;
 }
 .main-menu .user .log {
-	border-radius: 100%;
 	overflow: hidden;
     margin-top: -15px;
     height: 42px;
-    width: 42px;
 }
 .main-menu .user img {
-	width: 100%;
-	height: 100%;
+	border-radius: 100%;
+	width: 42px;
+	height: 42px;
+}
+.main-menu .user .log a:nth-child(2) {
+	margin-left: 10px;
+	color: #E4022C;
 }
 .searchBox {
 	width: 100%;
