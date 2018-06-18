@@ -787,7 +787,7 @@ a.close:hover {
 }
 .banner-box h1 {
 	padding-top: 285px;
-	font-size: 72px;
+	font-size: 72px!important;
 	color: #FFFFFF;
 	letter-spacing: 0;
 	font-family: Arial-Black;
