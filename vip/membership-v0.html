@@ -67,20 +67,54 @@
 							</p>
 						</div>
 					</div>
-					<div class="chapter text-right" style="margin-bottom: 40px;">
-						<a id="btn-join" class="btn btn-red w300" href="javascript:">加入会员</a>
-					</div>
-					<div class="chapter text-right code-chapter">
-						<dl class="joinVIP" style="display: none;">
-							<dt><img src="../img/login/orcode.jpg" /></dt>
-							<dd>微信扫码加入<br />-XPM- 会 员</dd>
-						</dl>
-						<div class="arrow1" ></div>
+					<div class="chapter text-right">
+						<a class="btn btn-red w350" href="javascript:" data-toggle="modal" data-target="#joinMember">加入会员</a>
 					</div>
 				</div>
 			</div>
 		</div>
 		
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="joinMember" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">填写会员资料</h4>
+            </div>
+            <div class="modal-body">
+            		<ul class="registerForm">
+					<li class="error"><span></span></li>
+					<li>
+						<label for="name">姓名</label>
+						<input class="fo name" id="name" type="text" placeholder="请输入您的姓名" />
+					</li>
+					<li class="error"><span><i class="iconfont icon-error"></i>超过16个字</span></li>
+					<li>
+						<label for="tel">电话</label>
+						<input class="fo tel" id="tel" type="text" placeholder="请输入您的电话" />
+					</li>
+					<li class="error"><span></span></li>
+					<li>
+						<label for="oid">身份证</label>
+						<input class="fo oid" id="oid" type="text" placeholder="请输入您的身份证号码" />
+					</li>
+					<li class="error"><span></span></li>
+					<li>
+						<label for="rec">推荐人</label>
+						<input class="fo rec" id="rec" type="text" placeholder="请输入您的推荐人姓名（选填）" />
+					</li>
+				</ul>
+				
+				<p class="tRed f14 text-center bold">确认资料，扫码支付会员费</p>
+				<div class="mt15 text-center">
+					<img class="orcode" src="../img/login/orcode.jpg" />
+				</div>
+				<p class="f12 mt20 text-center">会员卡仅限会员本人使用，会籍有效期1年</p>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
 		<div class="h100"></div>
 		<script type="text/javascript" src="../js/footer.js" ></script>
 		<script type='text/javascript' src='../js/jquery-3.3.1.min.js' charset='utf-8'></script>
@@ -89,9 +123,6 @@
 		<script src="../js/vip.js"></script>
 		<script>
 			setNav(1);
-			$("#btn-join").click(function(){
-				$(".joinVIP").toggle();
-			});
 		</script>
 	</body>
 </html>

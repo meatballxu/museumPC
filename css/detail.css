@@ -21,13 +21,20 @@
 	color: #EBEBEB;
 }
 .redForm .inputline.code .codeimg {
-	width: 120px;
+	width: 100px;
 	height: 41px;
 	margin: 0 5px;
+     padding-top: 5px;
 }
 .redForm .inputline.code a {
 	font-size: 20px;
 	color: #7ABC31;
+}
+.redForm .inputline.code .codeimg,
+.redForm .inputline.code a {
+	
+     display: inline-block;
+    vertical-align: middle;
 }
 .detailBox [class^="arrow"] {
 	height: 34px;
@@ -861,4 +868,27 @@
 }
 .eventText {
 	position: relative;
+}
+.code-chapter {
+	position: relative;
+	padding: 0 40px 50px 0!important;
+}
+.joinVIP {
+	width: 128px;
+	display: inline-block;
+font-size: 20px;
+line-height: 24px;
+}
+.joinVIP img{
+	width: 128px;
+}
+.joinVIP dd {
+	padding-top: 10px;
+	text-align: center;
+}
+.detailBox .chapter .arrow1:last-child {
+	left: auto;
+	right: 0;
+	bottom: 0;
+	top: auto;
 }
