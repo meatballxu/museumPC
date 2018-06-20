@@ -845,6 +845,16 @@
 	padding-top: 520px;
 	margin-bottom: 20px;
 }
+.academicDetail .publicationTop img {
+	height: 404px;
+	width: 404px;
+}
+.academicDetail .publicationTop h1 {
+    padding-top: 320px;
+}
+.publicationTop {
+    height: 472px;
+}
 .academicDetail .imglist {
 	position: relative;
 	padding: 40px 0;
@@ -891,4 +901,7 @@ line-height: 24px;
 	right: 0;
 	bottom: 0;
 	top: auto;
+}
+.academicDetail .intro.text-center p>img {
+	max-width: 1200px;
 }
