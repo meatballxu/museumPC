@@ -926,3 +926,16 @@ font-weight: bold;
 .popWin.failure {
 	color: #fff;
 }
+.dropdown-menu {
+    padding: 0;
+    }
+.dropdown-menu>li>a {
+	background: #EBEBEB;
+}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+	background: #1A1A1A;
+	color: #FFFFFF;
+}
+.dropdown-menu > li > a {
+    padding: 10px 20px;
+    }
