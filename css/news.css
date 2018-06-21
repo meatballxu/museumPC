@@ -52,7 +52,7 @@
 }
 
 .newsQA {
-	padding: 0 34px;
+	padding: 0;
 }
 
 .newsQA h3 {
@@ -187,15 +187,15 @@ ul.artFace .info {
 .artInfo h5 {
 	font-weight: bold;
 	font-size: 20px;
-	padding: 50px 34px 36px;
+	padding: 50px 0 36px;
 }
 .artInfo h5 + .newsText {
-      padding: 0 34px;
+      padding: 0 0;
 }
 .artInfo h5.bg {
       background: url(../img/line.jpg) no-repeat -30px 52px;
     padding-left: 0;
-    margin-left: 34px;
+    margin-left: 0;
 }
 .artInfo h5 span {
 	display: inline-block;
