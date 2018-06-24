@@ -835,6 +835,10 @@
 	padding: 150px 0 0;
 	background: url(../img/XPM/visit0.jpg) no-repeat center;
 }
+.visitPage .VRbox iframe {
+	margin-left: 31px;
+}
+     
 .academicDetail .chapter1 .image.first{
 	overflow: visible;
 }
