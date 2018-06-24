@@ -118,12 +118,13 @@
 	right: 50px;
 	bottom: 35px;
 	width: auto;
-	height: 130px;
+	min-width: 172px;
+	height: 100px;
 }
 .artTop .or .orcode  {
 	position:static;	
      display: inline-block;
-     margin-left: 20px;
+     margin-left: 10px;
 }
 ul.artFace li {
 	display: inline-block;

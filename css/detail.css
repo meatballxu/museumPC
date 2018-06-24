@@ -505,24 +505,23 @@
 	background: #FFFFFF;
 	text-align: center;
 	border: 1px solid #EBEBEB;
-	width: 106px;
+	width: 74px;
 	height: auto;
 }
 
 .newsTop .orcode span {
 	display: block;
 	font-size: 12px;
-	line-height: 22px;
+	line-height: 19px;
 	border-bottom: 1px solid #EBEBEB;
 }
 
 .newsTop .orcode div {
-	padding: 3px 3px;
+	padding: 3px 2px;
 }
 
 .newsTop .orcode div img {
-	height: 98px;
-	height: 98px;
+	width: 68px;
 }
 
 .newsText {
@@ -830,9 +829,9 @@
 	width: 100%;
 }
 .visitPage .VRbox {
-	height: 924px;
+	height: 880px;
 	margin-top: 50px;
-	padding: 150px 0 0;
+     padding: 136px 0 0;
 	background: url(../img/XPM/visit0.jpg) no-repeat center;
 }
 .visitPage .VRbox iframe {
