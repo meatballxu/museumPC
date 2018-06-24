@@ -793,7 +793,7 @@ a.close:hover {
 	font-size: 72px!important;
 	color: #FFFFFF;
 	letter-spacing: 0;
-	font-family: Arial-Black;
+	font-family: Arial-Black, "arial black", arial;
 }
 .tabs-nav {
 	text-align: center;
@@ -901,6 +901,12 @@ font-weight: bold;
 	border-bottom: 1px solid #EBEBEB;
 	color: #999999;
 }
+.location a {
+	color: #999999;
+}
+.location a:hover {
+    color: #DBAD3D;
+    }
 .location font {
 	color: #1A1A1A;
 	font-weight: bold;

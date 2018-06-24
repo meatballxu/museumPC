@@ -61,7 +61,7 @@
 }
 .detailBox .subject h1 {
 	text-align: left;
-	font-family: Arial-Black;
+	font-family: Arial-Black, "arial black", arial;
 	font-size: 54px;
 	color: #1A1A1A;
 	line-height: 68px;

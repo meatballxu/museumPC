@@ -10,12 +10,13 @@
 	left: 0;
 }
 .showlist .topic h1 {
-	font-family: Arial-Black;
+	font-family: Arial-Black, "arial black", arial;
 	font-size: 50px;
     width: 360px;
     padding-top: 58px;
     padding-left: 40px;
 	height: 180px;
+	font-weight: bold;
 }
 .showlist .chapter {
 	padding: 0;
