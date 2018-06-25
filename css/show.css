@@ -273,10 +273,10 @@
     width: 580px;
 }
 .storeInfo .newsTop .showinfo {
-    min-height: 60px;
+    min-height: 80px;
 }
 .storeInfo .newsTop .orcode {
-    left: 580px;
+    /*left: 580px;*/
     }
     
 .storeInfo .detailBox > .intro {

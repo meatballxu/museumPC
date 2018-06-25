@@ -912,6 +912,8 @@ line-height: 24px;
 	margin-top: 20px;
 }
 .storeInfo .newsText p> span {
-	
     display: block;
+}
+.storeInfo .newsTop .showinfo:after {
+    bottom: 0;
 }
