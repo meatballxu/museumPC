@@ -829,13 +829,13 @@
 	width: 100%;
 }
 .visitPage .VRbox {
-	height: 880px;
-	margin-top: 50px;
-     padding: 136px 0 0;
-	background: url(../img/XPM/visit0.jpg) no-repeat center;
+      height: 810px;
+    margin-top: 50px;
+    padding: 114px 0 0;
+    background: url(../img/XPM/visit0.jpg) no-repeat TOP;
 }
 .visitPage .VRbox iframe {
-	margin-left: 31px;
+	margin-left: 30px;
 }
      
 .academicDetail .chapter1 .image.first{
