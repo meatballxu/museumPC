@@ -908,3 +908,10 @@ line-height: 24px;
 .academicDetail .intro.text-center p>img {
 	max-width: 1200px;
 }
+.storeInfo .newsText p+p{
+	margin-top: 20px;
+}
+.storeInfo .newsText p> span {
+	
+    display: block;
+}
