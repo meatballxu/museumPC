@@ -23,13 +23,14 @@
 	margin-left: -15px;
 	margin-right: -15px;
 }
-.showlist .chapter .Exhibitions:nth-child(4n+1),
+/*.showlist .chapter .Exhibitions:nth-child(4n+1),*/
+.showlist .chapter .Exhibitions:first-child,
 .showlist .chapter .store:first-child {
 	margin-left: 409px;
 }
-.showlist .chapter .Exhibitions:nth-child(4n) {
+/*.showlist .chapter .Exhibitions:nth-child(4n) {
 	margin-right: 409px;
-}
+}*/
 .showlist .Exhibitions,
 .showlist .store {
 	width: 33.33%;
@@ -37,6 +38,9 @@
 	padding: 0 15px;
 	margin-bottom: 90px;
 	vertical-align: top;
+}
+.Exhibitions dl {
+	cursor: pointer;
 }
 .showlist dt {
 	background: #1A1A1A;
