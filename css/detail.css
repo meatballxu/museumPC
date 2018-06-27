@@ -759,18 +759,19 @@
 .chapter5 .img,.chapter5 .text {
 	display: inline-block;
 	position: absolute;
-	height: 366px;
+	height: 358px;
 }
 .chapter5 .img  {
 	padding: 0;
-	width: 580px;
+	width: 640px;
+	height: 360px;
 }
 .chapter5 .img img {
-	max-height: 100%;
-	max-width: 100%;
+	height: 100%;
+	width: 100%;
 }
 .chapter5 .text  {
-	width: calc(100% - 620px);
+	width: calc(100% - 690px);
 }
 .educationList .chapter:nth-child(2n+1) .img,
 .educationList .chapter:nth-child(2n) .text {
