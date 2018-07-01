@@ -610,6 +610,7 @@ footer .orcode h4 {
 }
 footer .logo {
 	background: url(../img/footer.jpg) no-repeat top;
+	background-size: 100% auto;
 	height: 113px;
 	width: 143px;
 	padding-top: 90px;
