@@ -39,6 +39,7 @@
 	margin-bottom: 90px;
 	vertical-align: top;
 }
+.chapter dl,
 .Exhibitions dl {
 	cursor: pointer;
 }

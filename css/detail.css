@@ -289,6 +289,9 @@
 	color: #3F3F3F;
 	line-height: 20px;
 }
+.chapter3 dd+dd {
+	margin-top: 30px;
+}
 /*会员招募*/
 .chapter > .arrow3:first-child {
 	top: 0;
@@ -817,14 +820,19 @@
 	-webkit-transition:all .5s;
 	transition:all .5s;
 }
+
 .chapter5:hover h1,
 .chapter5:hover p,
 .chapter5:hover div {
+}
+.chapter5:not(.cpfamily):hover h1,
+.chapter5:not(.cpfamily):hover p,
+.chapter5:not(.cpfamily):hover div {
 	color: #DBAD3D;
 	-webkit-transform: translate(2px,2px);
 	transform: translate(2px,2px);
 }
-.chapter5:hover img {
+.chapter5:not(.cpfamily):hover img {
 	box-shadow: 0 5px 20px rgba(0,0,0,.3);
 }
 .visitPage img {
