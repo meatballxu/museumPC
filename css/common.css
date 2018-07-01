@@ -396,6 +396,7 @@ del{ text-decoration:line-through; }
 }
 .main-menu .logo img {
 	margin-top: 34px;
+    width: 108px;
 }
 .main-menu .item {
 	margin-right: -40px;
