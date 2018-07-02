@@ -816,7 +816,7 @@
 	word-break: break-all;
 	word-wrap: break-word;
 }
-.chapter5 {
+.chapter5:not(.cpfamily) {
 	cursor: pointer;
 }
 .chapter5 .img,
