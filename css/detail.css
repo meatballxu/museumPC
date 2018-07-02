@@ -74,6 +74,12 @@
 	font-size: 46px;
 	font-weight: bold;
 }
+.detailBox.business .subject h2 {
+	font-size: 36px;
+}
+.detailBox.business .subject h3 {
+	font-size: 30px;
+}
 .detailBox .subject h3 {
 	margin-top: 30px;
 	font-weight: bold;
