@@ -121,16 +121,23 @@
 	height: 145px;
 }
 .scrollBox img,
+.scrollBox .img,
 .scrollBox p,
 .scrollBox b  {
 	display: inline-block;
 	float: left;
 }
-.scrollBox img {
+.scrollBox img,
+.scrollBox .img {
 	width: 145px;
 	height: 145px;
 	background: #FFFFFF;
 	border: 1px solid #D8D8D8;
+}
+.scrollBox .img {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 .scrollBox p,
 .scrollBox b  {

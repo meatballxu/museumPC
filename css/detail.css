@@ -461,7 +461,7 @@
 .newsTop>img {
 	height: 600px;
 	float: left;
-	max-width: 404px;
+	max-width: 404px!important;
 }
 
 .newsTop h1 {
