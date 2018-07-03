@@ -9,7 +9,7 @@ html,body {
 	height: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-size:cover;
 }
 .index-imgBg.ba1 {
 	background-image: url(../img/index/ba1.jpg);
