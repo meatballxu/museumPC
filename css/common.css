@@ -414,6 +414,16 @@ del{ text-decoration:line-through; }
 .search-btn i:hover {
 	color: #DBAD3D;
 }
+.main-menu .search-btn {
+	margin-right: 20px!important;
+}
+.main-menu .lan {
+	margin-right: 0!important;
+}
+.main-menu .lan.cn .lan-cn ,
+.main-menu .lan.en .lan-en{
+	display: none;
+}
 .search-btn i {
 	color: #B8B8B8;
     font-weight: bold;

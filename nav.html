@@ -33,6 +33,7 @@
 					<a href="#">资讯</a>
 					<a href="#">关于XPM</a>
 					<a class="search-btn" href="#"><img src="img/search-nav.png" /></a>
+					<a class="lan cn" href="#"><span class="lan-en">EN</span><span class="lan-cn">CN</span></a>
 				</div>
 			</div>
 			<div class="second">
@@ -173,6 +174,9 @@ window.onscroll=function(){
 			$(".show-fir").click(function() {
 				$(this).closest(".main-menu").removeClass("sec").addClass("fir")
 			});
+			$(".lan").click(function(){
+				$(this).toggleClass("cn").toggleClass("en")
+			});
 			
 		</script>
 		
@@ -183,7 +187,6 @@ window.onscroll=function(){
 			});
 			$(".btn-login").click(loginNav);
 			$(".btn-logout").click(logoutNav);
-			
 		</script>
 	</body>
 </html>

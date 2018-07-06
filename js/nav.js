@@ -15,6 +15,7 @@ document.writeln("			<a href=\'#\'>X-Space</a>");
 document.writeln("			<a href=\'#\'>资讯</a>");
 document.writeln("			<a href=\'#\'>关于XPM</a>");
 document.writeln("			<a class=\'search-btn\' href=\'javascript:\'><i class='iconfont icon-chazhao'></i></a>");
+document.writeln("			<a class=\'lan cn\' href=\'javascript:\'><span class=\'lan-en\'>EN</span><span class=\'lan-cn\'>CN</span></a>");
 document.writeln("		</div>");
 document.writeln("	</div>");
 document.writeln("	<div class=\'second ma5\'>");
@@ -99,6 +100,10 @@ function navBinding() {
 	//菜单按钮
 	$(".show-fir").click(function() {
 		$(this).closest(".main-menu").removeClass("sec").addClass("fir")
+	});
+	//中英文切换按钮
+	$(".lan").click(function(){
+		$(this).toggleClass("cn").toggleClass("en")
 	});
 	fixMenu();
 }
