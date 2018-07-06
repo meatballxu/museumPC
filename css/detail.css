@@ -937,3 +937,10 @@ line-height: 24px;
 .text-center img {
 	max-width: 1200px;
 }
+#aboutXPM #myCarousel {
+	height: 540px;
+}
+#aboutXPM #myCarousel img {
+	height: 540px;
+	width: 1120px;
+}
